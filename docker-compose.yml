@@ -1,0 +1,12 @@
+services:
+  aurex:
+    build:
+      context: .
+      dockerfile: Dockerfile
+    container_name: aurex-app
+    restart: unless-stopped
+    ports:
+      - "9645:9645"
+    environment:
+      - PORT=9645
+      - HOST=0.0.0.0

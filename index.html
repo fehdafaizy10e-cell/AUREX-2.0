@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+  <title>AUREX 2.0 | NASA Moon and Mars Mission Explorer</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@700;900&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <canvas id="stars"></canvas>
+  <header class="top">
+    <h1 class="brand">AUREX</h1>
+    <p class="sub">A place where everyone can explore and discover NASA’s extraordinary missions to the Moon and Mars.</p><div class="searchwrap"><div class="search">  <input id="q" type="search" placeholder="Search Apollo 11, Curiosity, Viking..." autocomplete="off" aria-label="Search hardware">  <button id="go" class="sbtn" aria-label="Search"><svg viewBox="0 0 24 24" fill="none" stroke="#fff" stroke-width="2.4" stroke-linecap="round" aria-hidden="true"><circle cx="10.5" cy="10.5" r="6.5"/><path d="M15.5 15.5L21 21"/></svg></button></div><div id="sugg" class="sugg" hidden></div></div><nav class="pills">  <button class="world" data-t="moon"><canvas class="orb" data-orb="moon" width="384" height="384"></canvas><span class="wl">Moon</span><span class="wsub">7 missions</span></button>  <button class="world" data-t="mars"><canvas class="orb" data-orb="mars" width="384" height="384"></canvas><span class="wl">Mars</span><span class="wsub">6 missions</span></button></nav>
+  </header>
+  <main id="app"></main>
+  <footer>Images: NASA Image and Video Library (images.nasa.gov). Facts compiled from NASA mission pages. Photo details come from NASA’s records. This is an unofficial fan project and is not endorsed by NASA.</footer>
+  <script src="/data.js"></script>
+  <script src="script.js"></script>
+</body>
+</html>
